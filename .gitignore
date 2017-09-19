@@ -1,0 +1,8 @@
+target/
+.*
+/pom.xml.versionsBackup
+.settings
+.classpath
+.project
+bin/
+*.iml
