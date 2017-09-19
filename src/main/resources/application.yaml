@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: git, jones
+  cloud:
+    config:
+      server:
+        health: false
+        zookeeper:
+          order: 1
+          connectionString: localhost
+        git:
+          uri: # Repo URI
+          order: 2
+        prefix: "springconfig"
+endpoints:
+  enabled: true
+  actuator:
+    enabled: true
