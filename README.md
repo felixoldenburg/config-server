@@ -16,11 +16,11 @@ https://github
 #### Spring Environment
 For Spring Cloud Config Clients configuration can be found at
 
-/springconfig/{application}/{profile}[/{label}]
-/springconfig/{application}-{profile}.yml
-/springconfig/{label}/{application}-{profile}.yml
-/springconfig/{application}-{profile}.properties
-/springconfig/{label}/{application}-{profile}.properties
+    /springconfig/{application}/{profile}[/{label}]
+    /springconfig/{application}-{profile}.yml
+    /springconfig/{label}/{application}-{profile}.yml
+    /springconfig/{application}-{profile}.properties
+    /springconfig/{label}/{application}-{profile}.properties
 
 ### JSON, YAML and Properties
 
