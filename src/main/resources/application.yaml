@@ -2,7 +2,7 @@ spring:
   application:
     name: configserver
   profiles:
-    active: git, jones
+    active: git, zookeeper
   cloud:
     config:
       server:
