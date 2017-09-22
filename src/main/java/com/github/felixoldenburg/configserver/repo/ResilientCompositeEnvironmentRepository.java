@@ -22,13 +22,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.cloud.config.environment.Environment;
 import org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository;
 import org.springframework.cloud.config.server.environment.EnvironmentRepository;
+import org.springframework.cloud.config.server.environment.SearchPathCompositeEnvironmentRepository;
 
 /**
- * A resilient version of the {@link CompositeEnvironmentRepository} which doesn't fail if on its {@link EnvironmentRepository}
+ * A resilient version of the {@link SearchPathCompositeEnvironmentRepository} which doesn't fail if on its {@link EnvironmentRepository}
  * can't provide any configuration or fails.
  * Useful to set up a back up {@link EnvironmentRepository}: If the first one doesn't has any configuration, pick it up from the next one and so on.
  */
-public class ResilientCompositeEnvironmentRepository extends CompositeEnvironmentRepository
+public class ResilientCompositeEnvironmentRepository extends SearchPathCompositeEnvironmentRepository
 {
     private final static Logger LOG = LoggerFactory.getLogger(ResilientCompositeEnvironmentRepository.class);
 
