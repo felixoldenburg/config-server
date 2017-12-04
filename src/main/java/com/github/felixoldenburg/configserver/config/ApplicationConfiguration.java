@@ -22,6 +22,7 @@ import org.springframework.context.annotation.Primary;
 @EnableAutoConfiguration(exclude = {ConfigServerAutoConfiguration.class})
 @EnableConfigurationProperties(ConfigServerProperties.class)
 @Import({
+    RepositoryConfiguration.class,
     EnvironmentRepositoryConfiguration.class,
     ResourceRepositoryConfiguration.class,
     ConfigServerEncryptionConfiguration.class,
