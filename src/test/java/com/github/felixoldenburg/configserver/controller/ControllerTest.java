@@ -1,6 +1,5 @@
-package com.github.felixoldenburg.configserver;
+package com.github.felixoldenburg.configserver.controller;
 
-import com.github.felixoldenburg.configserver.controller.ConfigController;
 import org.assertj.core.util.Maps;
 import org.junit.Test;
 import org.junit.runner.RunWith;

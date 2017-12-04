@@ -1,4 +1,4 @@
-package com.github.felixoldenburg.configserver;
+package com.github.felixoldenburg.configserver.repo;
 
 import com.github.felixoldenburg.configserver.repo.ResilientCompositeEnvironmentRepository;
 import com.google.common.collect.Lists;
